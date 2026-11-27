@@ -1,25 +1,42 @@
-# Invoice PDF Extractor
+# AI Invoice Processing Agent
 
-An agent skill that converts text-based invoice PDFs into JSON and Excel using a local Ollama model.
+An AI-powered invoice processing system built with Python, Ollama, Qwen3, PyMuPDF, and Pydantic.
 
-## What you need
-Python 3.10+, Ollama, the `llama3.2:3b` model, and the packages in `requirements.txt`.
+The system automatically reads multiple invoice PDFs from a folder, extracts important invoice information using a local AI model, validates the extracted data, and returns structured JSON.
 
-## Use
-Ask your agent: "Extract the invoices in my `invoices` folder to Excel."
+## Features
 
-Or run it yourself:
+- Process multiple invoice PDFs automatically
+- Extract text from PDF invoices
+- Use local AI with Ollama and Qwen3
+- Extract:
+  - Vendor name
+  - Invoice number
+  - Invoice date
+  - Total amount
+- Convert AI output into structured JSON
+- Validate extracted data using Pydantic
+- Handle missing invoice fields without inventing data
+- Completely local AI processing
 
-    python scripts/batch.py "path/to/invoices" --out "path/to/output"
+## Tech Stack
 
-## Limitations
-- No OCR for scanned PDFs
-- A small model can make mistakes, so verify important values
-- Discounts or extra charges may cause "Needs review"
-- Very long documents may not fit in the model's context
-- Ambiguous dates are read as day/month/year
+- Python
+- Ollama
+- Qwen3:4b
+- PyMuPDF
+- Pydantic
+- OpenPyXL
 
-`examples/sample-output.json` shows the output format with fake data. It is an illustration, not a recorded model result.
+## Project Structure
 
-## Author
-Monil Patel: https://github.com/MONILPATEL13
+```text
+ai-invoice-agent/
+├── src/
+│   ├── main.py
+│   └── pdf_reader.py
+├── invoices/
+├── output/
+├── requirements.txt
+├── .gitignore
+└── README.md
