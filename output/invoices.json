@@ -1,0 +1,89 @@
+[
+  {
+    "file": "invoice_001.pdf",
+    "status": "OK",
+    "data": {
+      "vendor": "Sunrise Stationers",
+      "invoice_number": "SS-1001",
+      "date": "2026-10-05",
+      "line_items": [
+        {
+          "description": "A4 paper ream",
+          "quantity": 5,
+          "unit_price": 280,
+          "amount": 1400
+        },
+        {
+          "description": "Blue pens box",
+          "quantity": 3,
+          "unit_price": 150,
+          "amount": 450
+        }
+      ],
+      "tax_amount": 333,
+      "total_amount": 2183
+    },
+    "problems": [],
+    "attempts": 1
+  },
+  {
+    "file": "invoice_002.pdf",
+    "status": "OK",
+    "data": {
+      "vendor": "Blue Hill Computers",
+      "invoice_number": "BHC-2045",
+      "date": "2026-10-18",
+      "line_items": [
+        {
+          "description": "USB keyboard",
+          "quantity": 4,
+          "unit_price": 550,
+          "amount": 2200
+        },
+        {
+          "description": "Wireless mouse",
+          "quantity": 4,
+          "unit_price": 450,
+          "amount": 1800
+        },
+        {
+          "description": "HDMI cable",
+          "quantity": 2,
+          "unit_price": 250,
+          "amount": 500
+        }
+      ],
+      "tax_amount": 810,
+      "total_amount": 5310
+    },
+    "problems": [],
+    "attempts": 1
+  },
+  {
+    "file": "invoice_003.pdf",
+    "status": "OK",
+    "data": {
+      "vendor": "Green Leaf Caterers",
+      "invoice_number": "GLC-0312",
+      "date": "2026-11-02",
+      "line_items": [
+        {
+          "description": "Lunch plates",
+          "quantity": 40,
+          "unit_price": 120,
+          "amount": 4800
+        },
+        {
+          "description": "Tea service",
+          "quantity": 40,
+          "unit_price": 20,
+          "amount": 800
+        }
+      ],
+      "tax_amount": 1008,
+      "total_amount": 6608
+    },
+    "problems": [],
+    "attempts": 1
+  }
+]

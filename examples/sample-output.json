@@ -1,0 +1,19 @@
+[
+  {
+    "file": "invoice_001.pdf",
+    "status": "OK",
+    "data": {
+      "vendor": "Sunrise Stationers (Sample)",
+      "invoice_number": "SS-1001",
+      "date": "2026-10-05",
+      "line_items": [
+        {"description": "A4 paper ream", "quantity": 5, "unit_price": 280, "amount": 1400},
+        {"description": "Blue pens box", "quantity": 3, "unit_price": 150, "amount": 450}
+      ],
+      "tax_amount": 333,
+      "total_amount": 2183
+    },
+    "problems": [],
+    "attempts": 1
+  }
+]
